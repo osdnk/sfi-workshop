@@ -4,9 +4,9 @@ This repo consists of materials for workshop for Computer Science Festival in Cr
 ## Abstract
 
 ### 1. Theoretical Introduction 
-* Why to use cross-platform technologies? 
-* Why to use React Native?
-* Why to use and why not to use Expo?
+* Why use cross-platform technologies? 
+* Why use React Native?
+* Why do use and why do not use Expo?
 * Firebase! :cupid:
 
 ### Hello world!
@@ -26,19 +26,19 @@ We're living in hurry and have no time to remember everthing. :anger:
 
 Let's make app for adding todos and marking them as `finished` :+1:
 
-Fortunately, someone has made this app already. Unluckily, bad hacker removed some lines from code and we need to reapair it :worried:
+Fortunately, someone has made this app already. Unluckily, bad hacker removed some lines from code and we need to repair it :worried:
 
 #### Tips :eyes:
   * `TodoList.js`
     * :14 Well, you need to make completely new state (mind that you cannot modify immutable
-    object) and give it to `setState` function in order to apply it to new state and 
+    object :stop:) and give it to `setState` function in order to apply it to new state and 
     rerender Component
     * :22 That's easier. Just add new item to list. Did you try push? Hah, remember that 
     state is _immutable_! :warning:
     * :33 Take a look that I made a `TodoItem` Component. Import it and here to render. 
     
     I suppose you will encounter some issue with `key`. In React every component has to have
-    own key so apply it just like normal prop. 
+    own key so apply it just like normal prop e.g. ``key={`item_${i}`}``. 
     
     `onPress={() => this.markAsDone(i)}` Let you think for a while about it. Not just paste.
     
