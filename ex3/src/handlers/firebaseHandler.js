@@ -5,7 +5,7 @@ export default class firebaseHandler {
     this.setTodos = props.setTodos;
     this.markAsDone= props.markAsDone;
     this.db = firebase.database();
-    this.listenForItems(this.db.ref('/todos2'));
+    this.listenForItems(this.db.ref('/todos'));
   }
 
   listenForItems = itemsRef => {
@@ -19,7 +19,7 @@ export default class firebaseHandler {
   }
 
   markAsFinished =  (key) =>  {
-    const taskRef = this.db.ref('todos2/' + key);
+    const taskRef = this.db.ref('todos/' + key);
     taskRef.once('value', snap => {
       const data = snap.val();
       data.isDone = !data.isDone;
@@ -27,5 +27,5 @@ export default class firebaseHandler {
     })
   };
 
-  addTodo = (name) => this.db.ref('/todos2').push({label: name, isDone: false})
+  addTodo = (name) => this.db.ref('/todos').push({label: name, isDone: false})
 }
