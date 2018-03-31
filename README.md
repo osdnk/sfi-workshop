@@ -88,7 +88,7 @@ just look at the solution and understand it. If you manage, try to fix `TODO`s
     pros. Look at line :70. We're exporting component wrapped into datastore stuff
     
 #### Extra exercise
-It's a bit differend and more creative. :warning: It's wrapper for a game I wrote recently. It's 
+It's a bit different and more creative. :warning: It's wrapper for a game I wrote recently. It's 
 not a diffilult one. Game end when you tap black box and result is passed by funtion from
 props. Write handling for the game and save data to firebase server if it's the best global
 result. 
