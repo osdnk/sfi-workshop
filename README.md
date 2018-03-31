@@ -34,7 +34,7 @@ Fortunately, someone has made this app already. Unluckily, bad hacker removed so
     object) and give it to `setState` function in order to apply it to new state and 
     rerender Component
     * :22 That's easier. Just add new item to list. Did you try push? Hah, remember that 
-    state is _immutable_
+    state is _immutable_! :warning:
     * :33 Take a look that I made a `TodoItem` Component. Import it and here to render. 
     
     I suppose you will encounter some issue with `key`. In React every component has to have
@@ -44,7 +44,7 @@ Fortunately, someone has made this app already. Unluckily, bad hacker removed so
     
     * :38 Same as above, `Adder` also require some function
   * `Adder.js`
-    * :12 We need to invoke a method from props
+    * :12 We need to invoke a method from props :crown:
     
 ### Exercise 2
 Now we wish to use also another device and synchronize data using *Firebase* :cloud:
@@ -62,7 +62,7 @@ Now we wish to use also another device and synchronize data using *Firebase* :cl
   
 ### Exercise 3
 Let's be honest. This code is a shit and it couldn't by used anywhere. Have you ever 
-heard about MVP? \*Michaś's talking about MVP\*
+heard about MVP? \*Michaś :it: is talking about MVP\*
 
 Look at the code! Maybe it looks like overkill to use `Redux` here. Mein Got, it's just todoApp, but it's
 essential to learn how to write a good and scalable code.
@@ -88,7 +88,7 @@ just look at the solution and understand it. If you manage, try to fix `TODO`s
     pros. Look at line :70. We're exporting component wrapped into datastore stuff
     
 #### Extra exercise
-It's a bit differend and more creative. :thinking_face: It's wrapper for a game I wrote recently. It's 
+It's a bit differend and more creative. :warning: It's wrapper for a game I wrote recently. It's 
 not a diffilult one. Game end when you tap black box and result is passed by funtion from
 props. Write handling for the game and save data to firebase server if it's the best global
 result. 
