@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   return ({
   todos: state.todos.todos,
-//  filter: state.todos.filter TODO
+//  filter  TODO
 })}
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
