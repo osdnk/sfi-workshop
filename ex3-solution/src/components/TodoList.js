@@ -6,10 +6,16 @@ import { connect } from 'react-redux'
 import { setTodos, toggleFilter } from '../actions/index';
 import firebaseHandler from '../handlers/firebaseHandler';
 
+
 class TodoList extends React.Component {
+
   componentDidMount() {
     this.fh = new firebaseHandler(this.props)
   }
+
+  getFiltedTodos = () =>
+    this.props.todos.filter(e => !this.props.filter || !e.isDone)
+
 
   render() {
     return (
@@ -22,7 +28,7 @@ class TodoList extends React.Component {
         />
         <View style={styles.todos}>
           <ScrollView>
-          {//TODO .map(todo =>
+          {this.getFiltedTodos().map(todo =>
             <TodoItem
               key={`todo ${todo.key}`}
               onPress={() => this.fh.markAsFinished(todo.key)}
@@ -58,11 +64,11 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   return ({
   todos: state.todos.todos,
-//  filter: state.todos.filter TODO
+  filter: state.todos.filter
 })}
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  // toggleFilter: TODO
+  toggleFilter: () => dispatch(toggleFilter),
   setTodos: (todos) => dispatch(setTodos(todos))
 })
 

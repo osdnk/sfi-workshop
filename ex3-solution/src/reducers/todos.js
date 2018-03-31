@@ -5,7 +5,11 @@ const todos = (state = defaultState, action) => {
         ...state,
         todos: action.todos
       };
-    // TODO 1
+    case 'TOGGLE_FILTER':
+      return {
+        ...state,
+        filter: !state.filter
+      };
     default:
       return state
   }
@@ -13,7 +17,7 @@ const todos = (state = defaultState, action) => {
 
 const defaultState = {
   todos: [],
-  //filter: false TODO
+  filter: false
 }
 
 export default todos

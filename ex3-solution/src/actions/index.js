@@ -3,4 +3,6 @@ export const setTodos = todos => ({
   todos: todos
 });
 
-export const toggleFilter = //TODO 2
+export const toggleFilter = ({
+  type: 'TOGGLE_FILTER'
+});
