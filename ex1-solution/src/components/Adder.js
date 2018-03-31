@@ -9,7 +9,11 @@ class Adder extends React.Component {
     };
   }
   onPress = () => {
-    // TODO 6
+    if (this.props.onAdd)
+      this.props.onAdd(this.state.inputText);
+    this.setState({
+      inputText: ''
+    })
   }
   render() {
     return (

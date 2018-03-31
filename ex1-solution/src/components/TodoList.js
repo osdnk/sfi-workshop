@@ -12,14 +12,19 @@ class TodoList extends React.Component {
   }
 
   markAsDone = id => {
-    // TODO 1
-    this.setState({
-      ...
-    })
+    console.log(this.state)
+    const newTodos = this.state.todos;
+    newTodos[id].isDone = true;
+    this.setState({ todos: newTodos })
   };
 
   addItem = name => {
-    // TODO 2
+    this.setState ({
+      todos: this.state.todos.concat({
+        label: name,
+        isDone: false
+      })
+    })
   }
 
   render() {
@@ -29,13 +34,17 @@ class TodoList extends React.Component {
         <View style={styles.todos}>
           <ScrollView>
           {this.state.todos.map((todo, i) =>
-            // Why scrollView? TODO 4
-            // TODO 3
+            <TodoItem
+              key={`todo ${i}`}
+              onPress={() => this.markAsDone(i)}
+              caption={todo.label}
+              isDone={todo.isDone}
+            />
           )}
           </ScrollView>
         </View>
         <Adder
-          // TODO 5
+          onAdd={this.addItem}
         />
       </View>
     );
