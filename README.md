@@ -16,10 +16,10 @@ install XDE on your computer and app on your mobile phone. You could use emulato
 but that's not a part of the workshop[
 
 * What's React? 
-** App.js
-** What's js? Where's CSS?!
-** SampleClass and button
-** _Reacting_ on new props and state 
+ * App.js
+ * What's js? Where's CSS?!
+ * SampleClass and button
+ *_Reacting_ on new props and state 
 
 ### Exercise 1
 We're living in hurry and have no time ot remember everthing.
@@ -62,7 +62,7 @@ Now we wish to use also another device and synchronize data using *Firebase*
   
 ### Exercise 3
 Let's be honest. This code is a shit and it couldn't by used anywhere. Have you ever 
-heard about MVP? \*Michaś's talking about MVP*\
+heard about MVP? \*Michaś's talking about MVP\*
 
 Look at the code! Maybe it looks like overkill to use `Redux` here. Mein Got, it's just todoApp, but it's
 essential to learn to write a good and scalable code.
@@ -94,12 +94,3 @@ props. Write handling for the game and save data to firebase server if it's the 
 result. 
 Then you could add authentication, ranking and whatever you wish. But don't try to do it 
 now
-
-
-
-  
-    
-    
-
-   
-    
