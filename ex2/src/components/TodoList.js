@@ -14,7 +14,7 @@ class TodoList extends React.Component {
   }
 
   componentDidMount() {
-    this.db = firebase.database();
+    // this.db = firebase.database(); TODO
     this.listenForItems(this.db.ref('/todos'));
   }
 
