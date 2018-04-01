@@ -9,7 +9,7 @@ This repo consists of materials for workshop for Computer Science Festival in Cr
 * Why do use and why do not use Expo?
 * Firebase! :cupid:
 
-### Hello world!
+### 2. Hello world!
 I strongly encourage you to use Expo XDE.
 Let you follow https://docs.expo.io/versions/latest/introduction/installation.html in order to 
 install XDE on your computer and app on your mobile phone. You could use emulator as well,
@@ -21,7 +21,7 @@ but that's not a part of this workshop
  * SampleClass and button
  *_Reacting_ on new props and state 
 
-### Exercise 1
+### 3. Exercise 1
 We're living in a hurry and have no time to remember everything. :anger:
 
 Let's make an app for adding todos and marking them as `finished` :+1:
@@ -46,7 +46,7 @@ Fortunately, someone has made this app already. Unluckily, bad hacker removed so
   * `Adder.js`
     * :12 We need to invoke a method from props :crown:
     
-### Exercise 2
+### 4. Exercise 2
 Now we wish to use also another device and synchronize data using *Firebase* :cloud:
 
 #### Tips :eyes:
@@ -60,7 +60,7 @@ Now we wish to use also another device and synchronize data using *Firebase* :cl
   * `App.js`
     * :10 Just uncomment. But remember to think!
   
-### Exercise 3
+### 5. Exercise 3
 Let's be honest. This code is a shit and it couldn't by used anywhere. Have you ever 
 heard about MVP? \*Michaś :it: is talking about MVP\*
 
@@ -87,7 +87,7 @@ just look at the solution and understand it. If you manage, try to fix `TODO`s
     * :60 && :66 There's some data coming from the store and it has to be appplied to a component 
     pros. Look at line :70. We're exporting component wrapped into datastore stuff
     
-#### Extra exercise
+### 6. Extra exercise
 It's a bit different and more creative one. :warning: It's a wrapper for a game I have written recently. It's 
 not a difficult one. Game end when you tap black box and result is passed by function from
 props. Write handling for the game and save data to firebase server if it's the best global
