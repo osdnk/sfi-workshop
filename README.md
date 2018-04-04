@@ -19,7 +19,7 @@ but that's not a part of this workshop
  * App.js
  * What's js? Where's CSS?!
  * SampleClass and button
- *_Reacting_ on new props and state 
+ * _Reacting_ on new props and state 
 
 ### 3. Exercise 1
 We're living in a hurry and have no time to remember everything. :anger:
@@ -31,7 +31,7 @@ Fortunately, someone has made this app already. Unluckily, bad hacker removed so
 #### Tips :eyes:
   * `TodoList.js`
     * :14 Well, you need to make completely new state (mind that you cannot modify immutable
-    object :stop:) and give it to `setState` function in order to apply it to a new state and 
+    object) and give it to `setState` function in order to apply it to a new state and 
     rerender Component
     * :22 That's easier. Just add new item to list. Did you try push? Hah, remember that 
     state is _immutable_! :warning:
